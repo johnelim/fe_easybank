@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  /* primary */
+  --color-dark-blue: #2d314d;
+  --color-lime-green: #31d35c;
+  --color-bright-cyan: #2bb7da;
+
+  /* neutral */
+  --color-grayish-blue: #9698a6;
+  --color-light-grayish-blue: #f3f4f6;
+  --color-very-light-gray: #fafafa;
+}
+
+@layer base {
+  body {
+    @apply tracking-tighter;
+  }
+
+  p {
+    @apply text-grayish-blue text-sm leading-7;
+  }
+
+  section {
+    @apply p-6 sm:p-16 sm:block flex flex-col items-center;
+  }
+
+  h1,
+  h2 {
+    @apply text-dark-blue;
+  }
+
+  footer button {
+    @apply hover:text-lime-green;
+  }
+
+  footer svg {
+    @apply fill-white;
+  }
+
+  button:hover {
+    @apply scale-105 transition-all duration-300;
+  }
+}
+
+@layer components {
+  .header {
+    @apply p-4 bg-white z-50;
+  }
+
+  .navbar {
+    @apply p-4 h-16 flex flex-row justify-between items-center relative;
+  }
+
+  .hero {
+    @apply w-screen justify-between relative;
+  }
+
+  .request-invite {
+    @apply text-white rounded-full p-2 w-40 shadow-2xl bg-gradient-to-br from-lime-green to-bright-cyan hover:font-semibold hover:opacity-80;
+  }
+
+  .navbar-buttons {
+    @apply text-grayish-blue hover:text-dark-blue flex flex-col justify-center items-center relative;
+  }
+
+  .backdrop {
+    @apply h-full w-full absolute inset-0 top-24 bg-black opacity-50 z-30;
+  }
+
+  .article-entry {
+    @apply bg-white rounded-sm shadow-xl relative overflow-clip
+    sm:w-1/4 sm:aspect-[1/1.5] sm:max-w-72
+    hover:scale-105 transition-transform duration-300;
+  }
+}
