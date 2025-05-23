@@ -1,5 +1,5 @@
 # Easybank Landing Page – Frontend Mentor Challenge
-
+Live Vercel app here: [https://fe-easybank.vercel.app/]
 This is my solution to the [Easybank landing page challenge](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN) from Frontend Mentor. Built with **React**, **TypeScript**, and **TailwindCSS**.
 
 ## 🚀 Tech Stack
